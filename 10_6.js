@@ -1,5 +1,5 @@
 array = [5, 5, 5, 5, 5, 5];
-function HZ(array) {
+function Same(array) {
   let k = array[0];
   for (let i = 0; i < array.length; i++) {
     while (k !== array[i]) {
@@ -8,4 +8,4 @@ function HZ(array) {
   }
   return true;
 }
-console.log(HZ(array));
+console.log(Same(array));
