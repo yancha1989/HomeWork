@@ -1,9 +1,11 @@
 let setNumber = prompt("введите число");
-let value;
+
 if (isNaN(+setNumber) || setNumber === null) {
   alert("что-то пошло не так");
-} else if ((value = +setNumber % 2 == 0)) {
+} else if (+setNumber % 2 == 0) {
   alert("четное");
-} else if ((value = +setNumber % 2 != 0)) {
+} else if (+setNumber % 2 != 0) {
   alert("нечетное");
 }
+
+// Код работает верно, но есть одно замечание: использовать переменную value в данном случае нет смысла. Вы можете проверить на равенство чему-либо целое выражение, не только переменную. Выше исправила на более верный вариант

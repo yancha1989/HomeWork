@@ -6,9 +6,11 @@ switch (typeof value) {
   case "number":
     console.log("Number");
     break;
-  case "booleen":
-    console.log("Booleen");
+  case "boolean":
+    console.log("Boolean");
     break;
   default:
     console.log("HZ");
 }
+
+// В программе есть ошибка (или возможно опечатка): неправильно распознаются значения boolean. Выше исправила
